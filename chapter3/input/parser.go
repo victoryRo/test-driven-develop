@@ -15,9 +15,9 @@ type OperationProcessor interface {
 	ProcessOperation(operation calculator.Operation) (*string, error)
 }
 
-// ValidationHelper is the interface for input valeidation
+// ValidationHelper is the interface for input validation
 type ValidationHelper interface {
-	CheckInput(oparator string, operands []float64) error
+	CheckInput(operator string, operands []float64) error
 }
 
 // Parser is responsible for converting input to mathematical operations
